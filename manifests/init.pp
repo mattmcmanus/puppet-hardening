@@ -10,10 +10,10 @@ class hardening {
 
   # 3 Disable Standard Services
   # 4 Minimize boot services
-  include hardening::services
+  # include hardening::services
 
   # 4.1 Set Daemon umask
-  include hardening::umask
+  # include hardening::umask
 
   # 5.1 Network Parameter Modifications
   include hardening::sysctl
@@ -31,7 +31,7 @@ class hardening {
   include hardening::cron
 
   # 8.6 Restrict Root Logins To System Console
-  include hardening::console
+  # include hardening::console
 
   # 10.1 Create Warnings For Network And Physical Access Services
   include hardening::issue

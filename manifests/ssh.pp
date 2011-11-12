@@ -1,6 +1,6 @@
 class hardening::ssh {
 
-  $sshport = '20'
+  $sshport = '22'
 
   file { '/etc/ssh/sshd_config':
     content => template('hardening/sshd_config.erb'),
